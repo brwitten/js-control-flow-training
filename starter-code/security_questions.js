@@ -6,13 +6,11 @@ var securityQuestions = [
   {question: "Cats or dogs?", expectedAnswer: "both!"}
 ];
 
-console.log("security array is set");
+console.log(securityQuestions[1].question);
 
 var arrayLength = securityQuestions.length;
 console.log(arrayLength);
 
 for (var i = 0; i <= arrayLength; i++) {
-    //alert(myStringArray[i]);
-    prompt(question);
-    break;
+    prompt(securityQuestions[i].question);
 }
