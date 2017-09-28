@@ -11,6 +11,10 @@ console.log(securityQuestions[1].question);
 var arrayLength = securityQuestions.length;
 console.log(arrayLength);
 
-for (var i = 0; i <= arrayLength; i++) {
-    prompt(securityQuestions[i].question);
+for (var i = 0; i < arrayLength; i++) {
+    var userAnswer = prompt(securityQuestions[i].question);
+    if (userAnswer != securityQuestions[i].expectedAnswer) {
+      alert("Hmm.. that's not right. Goodbye!");
+      break;
+    };
 }
